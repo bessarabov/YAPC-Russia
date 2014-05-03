@@ -1,0 +1,9 @@
+language: perl
+install: cpanm --notest Test::Exception Class::Date
+script: prove
+perl:
+  - "5.8"
+  - "5.10"
+  - "5.12"
+  - "5.14"
+  - "5.16"
