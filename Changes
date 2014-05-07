@@ -2,3 +2,12 @@ Revision history for YAPC::Russia
 
 1.0.0   2014-05-03
         * First public release
+
+1.1.0   2014-05-07
+        [Minor]
+        * Method get_place() returns city
+
+        [Patch]
+        * Fixing bug in get_place() method
+        * Specifying min perl version 5.8.0
+        * Info in POD that SemVer is used
