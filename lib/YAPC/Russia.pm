@@ -94,6 +94,7 @@ For the year 2014 it will return:
 sub get_place {
     my ($self) = @_;
 
+    return $self->{_data}->{place};
 }
 
 sub _get_data_for_year {
