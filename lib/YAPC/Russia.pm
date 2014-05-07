@@ -82,6 +82,7 @@ Returns hashref with data about place where YAPC::Russia is held.
 For the year 2014 it will return:
 
     {
+        city => 'Saint Petersburg',
         name_ru => 'Место Роста',
         address_ru => 'Курляндская, дом 5',
         site => 'http://mestorosta.biz',
@@ -104,6 +105,7 @@ sub _get_data_for_year {
         2014 => {
             dates => [qw(2014-06-13 2014-06-14)],
             place => {
+                city => 'Saint Petersburg',
                 name_ru => 'Место Роста',
                 address_ru => 'Курляндская, дом 5',
                 site => 'http://mestorosta.biz',
