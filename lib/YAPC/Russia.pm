@@ -14,6 +14,9 @@ L<https://www.facebook.com/events/317682595047028/>
 
 L<https://vk.com/yapcrussia2014>
 
+YAPC::Russia version numbers uses Semantic Versioning standart.
+Please visit L<http://semver.org/> to find out all about this great thing.
+
 =cut
 
 use strict;
