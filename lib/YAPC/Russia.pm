@@ -8,13 +8,15 @@ package YAPC::Russia;
 
 Here is a simple object that gives data about Perl conference YAPC::Russia.
 
+Several links about YAPC::Russia 2014:
+
 L<http://event.yapcrussia.org/yr2014/>
 
 L<https://www.facebook.com/events/317682595047028/>
 
 L<https://vk.com/yapcrussia2014>
 
-YAPC::Russia version numbers uses Semantic Versioning standart.
+Module YAPC::Russia uses Semantic Versioning standart for version numbers.
 Please visit L<http://semver.org/> to find out all about this great thing.
 
 =cut
