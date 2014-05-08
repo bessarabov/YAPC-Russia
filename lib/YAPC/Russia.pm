@@ -28,7 +28,11 @@ use Carp;
 
 use Class::Date qw(date);
 
-=head1 new
+=head1 METHODS
+
+=cut
+
+=head2 new
 
     my $yr = YAPC::Russia->new(
         year => 2014,
@@ -52,7 +56,7 @@ sub new {
     return $self;
 }
 
-=head1 get_dates
+=head2 get_dates
 
 Returns list of Class::Date objects with dates of the YAPC::Russia event.
 
@@ -76,7 +80,7 @@ sub get_dates {
     return @dates;
 }
 
-=head1 get_place
+=head2 get_place
 
 Returns hashref with data about place where YAPC::Russia is held.
 
