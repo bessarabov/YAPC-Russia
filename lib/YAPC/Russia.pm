@@ -8,14 +8,6 @@ package YAPC::Russia;
 
 Here is a simple object that gives data about Perl conference YAPC::Russia.
 
-Several links about YAPC::Russia 2014:
-
-L<http://event.yapcrussia.org/yr2014/>
-
-L<https://www.facebook.com/events/317682595047028/>
-
-L<https://vk.com/yapcrussia2014>
-
 Module YAPC::Russia uses Semantic Versioning standart for version numbers.
 Please visit L<http://semver.org/> to find out all about this great thing.
 
@@ -37,7 +29,7 @@ use Class::Date qw(date);
 =head2 new
 
     my $yr = YAPC::Russia->new(
-        year => 2014,
+        year => 2015,
     );
 
 =cut
@@ -64,10 +56,10 @@ Returns list of Class::Date objects with dates of the YAPC::Russia event.
 
     $yr->get_dates();
 
-For the year 2014 it will return objects with dates:
+For the year 2015 it will return objects with dates:
 
-    2014-06-13
-    2014-06-14
+    2015-05-16
+    2015-05-17
 
 =cut
 
@@ -88,15 +80,13 @@ Returns hashref with data about place where YAPC::Russia is held.
 
     $yr->get_place();
 
-For the year 2014 it will return:
+For the year 2015 it will return:
 
     {
-        city => 'Saint Petersburg',
-        name_ru => 'Место Роста',
-        address_ru => 'Курляндская, дом 5',
-        site => 'http://mestorosta.biz',
-        phone => '+7 812 648-13-81',
-        foursquare => 'https://foursquare.com/v/%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%80%D0%BE%D1%81%D1%82%D0%B0/50fe895ce4b0382948fd8148',
+        city => 'Moscow',
+        name_ru => 'Mail.ru',
+        address_ru => 'Ленинградский проспект 39, стр. 79',
+        foursquare => 'https://foursquare.com/v/mailru-hq/4b980acdf964a520532835e3',
     }
 
 =cut
@@ -120,6 +110,15 @@ sub _get_data_for_year {
                 site => 'http://mestorosta.biz',
                 phone => '+7 812 648-13-81',
                 foursquare => 'https://foursquare.com/v/%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D1%80%D0%BE%D1%81%D1%82%D0%B0/50fe895ce4b0382948fd8148',
+            }
+        },
+        2015 => {
+            dates => [qw(2015-05-16 2015-05-17)],
+            place => {
+                city => 'Moscow',
+                name_ru => 'Mail.ru',
+                address_ru => 'Ленинградский проспект 39, стр. 79',
+                foursquare => 'https://foursquare.com/v/mailru-hq/4b980acdf964a520532835e3',
             }
         },
     );

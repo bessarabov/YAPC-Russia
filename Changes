@@ -16,3 +16,7 @@ Revision history for YAPC::Russia
         [Patch]
         * Using head2 for methods in POD
         * Small changes in POD to make it better
+
+2.0.0   2015-03-05
+        [Major]
+        * Info about YAPC::Russia 2015
