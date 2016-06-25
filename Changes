@@ -24,3 +24,10 @@ Revision history for YAPC::Russia
 3.0.0   2016-06-25
         [Major]
         * Info about YAPC::Russia 2016
+
+4.0.0   2016-06-25
+        [Major]
+        * Using perl library Moment insted of Class::Date
+
+        [Minor]
+        * New method is_live()
