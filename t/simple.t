@@ -34,7 +34,7 @@ sub check_get_dates {
         year => 2014,
     );
 
-    my @dates = map { $_->strftime('%Y-%m-%d') } $yr->get_dates();
+    my @dates = map { $_->get_d() } $yr->get_dates();
 
     is_deeply(
         \@dates,

@@ -20,7 +20,7 @@ use open qw(:std :utf8);
 
 use Carp;
 
-use Class::Date qw(date);
+use Moment;
 
 =head1 METHODS
 
@@ -52,7 +52,7 @@ sub new {
 
 =head2 get_dates
 
-Returns list of Class::Date objects with dates of the YAPC::Russia event.
+Returns list of L<Moment> objects with dates of the YAPC::Russia event.
 
     $yr->get_dates();
 
@@ -67,7 +67,7 @@ sub get_dates {
 
     my @dates;
     foreach my $d (@{$self->{_data}->{dates}}) {
-        push @dates, date($d);
+        push @dates, Moment->new( dt => "$d 00:00:00");
     }
 
     return @dates;
