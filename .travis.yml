@@ -1,5 +1,5 @@
 language: perl
-install: cpanm --notest Test::Exception Class::Date
+install: cpanm --notest Test::Exception Moment
 script: prove
 perl:
   - "5.8"
@@ -7,3 +7,5 @@ perl:
   - "5.12"
   - "5.14"
   - "5.16"
+  - "5.18"
+  - "5.20"
