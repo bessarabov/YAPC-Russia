@@ -96,6 +96,21 @@ sub get_place {
     return $self->{_data}->{place};
 }
 
+=head2 is_live
+
+Returns true value if today is the day of the the the selected YAPC::Russian
+conference.
+
+=cut
+
+sub is_live {
+    my ($self) = @_;
+
+    my $today_d = Moment->now()->get_d();
+
+    return grep { $_->get_d() eq $today_d } $self->get_dates();
+}
+
 sub _get_data_for_year {
     my ($self, $year) = @_;
 
