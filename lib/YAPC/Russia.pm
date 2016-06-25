@@ -29,7 +29,7 @@ use Class::Date qw(date);
 =head2 new
 
     my $yr = YAPC::Russia->new(
-        year => 2015,
+        year => 2016,
     );
 
 =cut
@@ -56,10 +56,9 @@ Returns list of Class::Date objects with dates of the YAPC::Russia event.
 
     $yr->get_dates();
 
-For the year 2015 it will return objects with dates:
+For the year 2016 it will return objects with dates:
 
-    2015-05-16
-    2015-05-17
+    2016-06-25
 
 =cut
 
@@ -80,7 +79,7 @@ Returns hashref with data about place where YAPC::Russia is held.
 
     $yr->get_place();
 
-For the year 2015 it will return:
+For the year 2016 it will return:
 
     {
         city => 'Moscow',
@@ -114,6 +113,15 @@ sub _get_data_for_year {
         },
         2015 => {
             dates => [qw(2015-05-16 2015-05-17)],
+            place => {
+                city => 'Moscow',
+                name_ru => 'Mail.ru',
+                address_ru => 'Ленинградский проспект 39, стр. 79',
+                foursquare => 'https://foursquare.com/v/mailru-hq/4b980acdf964a520532835e3',
+            }
+        },
+        2016 => {
+            dates => [qw(2016-06-25)],
             place => {
                 city => 'Moscow',
                 name_ru => 'Mail.ru',
